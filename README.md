@@ -1,7 +1,6 @@
 # js-packaging
 
-Experiments with JS Packaging for Browser &amp; Node. This document systematically increases the complexity when
-packaging JavaScript functions and classes.
+Test different JavaScript modules and packaging for node and the browser.
 
 ## Level 0: Common-JS, No Transpilation
 
@@ -37,7 +36,11 @@ The entry point `index.js`  integrate functions `a` and `b` defined in the files
 ```javascript
 const a = require('./a');
 const b = require('./b');
-module.exports = { first, other };
+module.exports = { a, b };
 ```
 
 This will work with classes as well.
+
+## Level 1: ES Modules
+
+
