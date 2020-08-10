@@ -1,8 +1,13 @@
 # js-packaging
 
-Experiments with JS Packaging for Browser &amp; Node
+Experiments with JS Packaging for Browser &amp; Node. This document systematically increases the complexity when
+packaging JavaScript functions and classes.
 
-## Modules
+## Level 0: Common-JS, No Transpilation
+
+The following modules are the most simple modules there are (at least when working with Node). Each package defines a
+module with one or more exported functions. The corresponding "client" packages just include the packages and use the
+functions. 
 
 | Module                | Comment                                                     |
 | ---                   | ---                                                         |
@@ -12,10 +17,6 @@ Experiments with JS Packaging for Browser &amp; Node
 | `simple-named-client` | A "client" using the `simple-named` module.                 |
 | `multi-simple`        | Multiple files, multiple functions, Common-JS.              |
 | `multi-simple-client` | A "client" using the `multi-simple` module.                 |
-
-## Conclusion
-
-### Common-JS Modules
 
 Functions may be exported via the module name with
 
@@ -38,3 +39,5 @@ const a = require('./a');
 const b = require('./b');
 module.exports = { first, other };
 ```
+
+This will work with classes as well.
