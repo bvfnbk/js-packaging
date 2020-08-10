@@ -12,7 +12,7 @@ The (most) simple `node` module.
 **Please note:** The function is exported as `square`, use it as
 
 ```javascript
-const {square} = require('simple');
+const {square} = require('simple-named');
 
 const four = square(2);
 ```
