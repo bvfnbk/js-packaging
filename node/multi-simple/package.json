@@ -1,0 +1,16 @@
+{
+  "name": "multi-simple",
+  "version": "1.0.0",
+  "description": "Multiple files, multiple functions, index.js aggregates it into a common-js module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "npm",
+    "packaging"
+  ],
+  "author": "bvfnbk@web.de",
+  "license": "ISC"
+}
