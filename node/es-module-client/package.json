@@ -12,6 +12,7 @@
     "npm",
     "packaging"
   ],
+  "type" : "module",
   "author": "bvfnbk@web.de",
   "license": "ISC",
   "dependencies": {

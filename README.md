@@ -49,8 +49,8 @@ This will work with classes as well.
 | `es-module-client`    | A "client" using the `simple-as-module`. |
 
 The simplest ES module scenario defines both, the used module and using module with `.mjs` files. The `package.json`
-`type` setting is not so much important as often stated on the web. This eventually depends on the `node` platform
-version though.
+`type` setting is more important for the client than for the actual module. The client script may use both extensions
+if set to `module` (cf. https://nodejs.org/api/esm.html#esm_package_json_type_field).
 
 **Please note:** There is no need to repeat the use-cases from level-0 as their transfer to ES modules is
 straightforward. Use
