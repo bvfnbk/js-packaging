@@ -1,15 +1,16 @@
-function square(value) {
+function assertNumber(value) {
     const valueType = typeof value;
     if (valueType === 'undefined') {
         throw new Error('Given value is not defined.');
     }
     if (value === null) {
-        throw new Error('Given value is null.')
+        throw new Error('Given value is null.');
     }
     if (valueType !== 'number') {
-        throw new Error('Given value is not a njumber.')
+        throw new Error('Given value is not a number.');
     }
-    return value * value;
 }
 
-module.exports = square;
+module.exports = {
+    assertNumber
+};

@@ -1,7 +1,7 @@
 {
-  "name": "multi-simple",
+  "name": "simple-math",
   "version": "1.0.0",
-  "description": "Multiple files, multiple functions, index.js aggregates it into a common-js module.",
+  "description": "The Common JS library; providing some simple functions.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,8 @@
   "keywords": [
     "javascript",
     "npm",
+    "common-js",
+    "node",
     "packaging"
   ],
   "author": "bvfnbk@web.de",
